@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учебный сайт</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      line-height: 1.5;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: #1f2937;
+      color: #fff;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #hero {
+      background: #e0f2fe;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    #hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+    #hero a {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: #1f2937;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    #features .article-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    article {
+      flex: 1 1 200px;
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 6px;
+      border: 1px solid #e5e7eb;
+    }
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 8px;
+    }
+    aside {
+      background: #fef9c3;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    aside ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 24px;
+      margin-top: 20px;
+    }
+    footer address {
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ЛОГО</div>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#features">Преимущества</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <h1>Добро пожаловать!</h1>
+      <p>Краткий слоган или описание сайта.</p>
+      <a href="#features">Узнать больше</a>
+    </section>
+
+    <section id="about">
+      <h2>О нас</h2>
+      <p>Немного текста о проекте, целях и задачах. Здесь можно рассказать, чем занимается компания или команда, какую проблему решает продукт.</p>
+    </section>
+
+    <section id="features">
+      <h2>Наши преимущества</h2>
+      <div class="article-list">
+        <article>
+          <h3>Скорость</h3>
+          <p>Загрузка страниц за доли секунды.</p>
+        </article>
+        <article>
+          <h3>Надежность</h3>
+          <p>Стабильная работа 24/7.</p>
+        </article>
+        <article>
+          <h3>Поддержка</h3>
+          <p>Помощь пользователям в любое время.</p>
+        </article>
+      </div>
+
+      <figure>
+        <img src="images/hero.jpg" alt="Пример иллюстрации сайта">
+        <figcaption>Иллюстрация главного раздела</figcaption>
+      </figure>
+    </section>
+
+    <aside>
+      <h2>Полезные ссылки</h2>
+      <ul>
+        <li><a href="#">Документация HTML</a></li>
+        <li><a href="#">Руководство по доступности</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Учебный сайт. Все права защищены.</p>
+    <address>email@example.com</address>
+  </footer>
+
+</body>
+</html>
